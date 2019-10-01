@@ -17,6 +17,8 @@ public String getCodigoOrganismo() {
 	return codigoOrganismo;
 }
 
+
+
 public void setCodigoOrganismo(String codigoOrganismo) {
 	this.codigoOrganismo = codigoOrganismo;
 }
