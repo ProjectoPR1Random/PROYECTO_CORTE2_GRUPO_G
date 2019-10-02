@@ -9,7 +9,7 @@ public class VentanaPrincipal extends JFrame {
 	PanelProductos pp;
 
 	public VentanaPrincipal() {
-		setTitle("AGRIUEB");
+		setTitle("AGROUEB");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		getContentPane().setLayout(null);
 		setResizable(false);
