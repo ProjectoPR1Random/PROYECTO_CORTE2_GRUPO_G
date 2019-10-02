@@ -12,7 +12,7 @@ public class Producto {
 		this.fechaEnvasado = pFechaEnvasado;
 		this.paisOrigen = pPaisOrigen;
 	}
-
+		
 	public String getFechaCaducidad() {
 		return fechaCaducidad;
 	}

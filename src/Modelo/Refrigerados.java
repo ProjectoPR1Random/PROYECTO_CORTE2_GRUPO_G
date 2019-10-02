@@ -4,7 +4,7 @@ public class Refrigerados extends Producto{
 	private String codigoOrganismo;
 	private String temperatura;
 
-public Refrigerados(String pFechaCaducidad, String pNumeroDeLote, String pFechaEnvasado,
+	public Refrigerados(String pFechaCaducidad, String pNumeroDeLote, String pFechaEnvasado,
 		String pPaisOrigen, String pCodigoOrganismo, String pTemperatura) {
 		super(pFechaCaducidad, pNumeroDeLote, pFechaEnvasado, pPaisOrigen);
 		// TODO Auto-generated constructor stub
@@ -16,6 +16,8 @@ public Refrigerados(String pFechaCaducidad, String pNumeroDeLote, String pFechaE
 public String getCodigoOrganismo() {
 	return codigoOrganismo;
 }
+
+
 
 public void setCodigoOrganismo(String codigoOrganismo) {
 	this.codigoOrganismo = codigoOrganismo;
