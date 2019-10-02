@@ -5,12 +5,12 @@ public class Producto {
 	private String numeroDeLote;
 	private String fechaEnvasado;
 	private String paisOrigen;
-	
+
 	public Producto(String pFechaCaducidad, String pNumeroDeLote, String pFechaEnvasado, String pPaisOrigen) {
-		this.fechaCaducidad=pFechaCaducidad;
-		this.numeroDeLote=pNumeroDeLote;
-		this.fechaEnvasado=pFechaEnvasado;
-		this.paisOrigen=pPaisOrigen;
+		this.fechaCaducidad = pFechaCaducidad;
+		this.numeroDeLote = pNumeroDeLote;
+		this.fechaEnvasado = pFechaEnvasado;
+		this.paisOrigen = pPaisOrigen;
 	}
 
 	public String getFechaCaducidad() {
@@ -44,5 +44,5 @@ public class Producto {
 	public void setPaisOrigen(String paisOrigen) {
 		this.paisOrigen = paisOrigen;
 	}
-	
+
 }
