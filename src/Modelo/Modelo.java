@@ -56,7 +56,7 @@ public class Modelo {
 
 			}
 		} catch (Exception e) {
-			e = new Exception("Error al agregar el producto");
+			e = new Exception("Error hal agregar el producto");
 			e.printStackTrace();
 		}
 		return ag;

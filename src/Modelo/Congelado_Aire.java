@@ -1,9 +1,10 @@
 package Modelo;
 
-public class Congelado_Aire extends Congelados{
+public class Congelado_Aire extends Congelados {
 
 
 	private String composicionDelAire;
+<<<<<<< HEAD
 	
 	/**
 	 * Constructor de la clase Congelado_Aire
@@ -17,12 +18,15 @@ public class Congelado_Aire extends Congelados{
 	 * @param pComposiciónDelAire La composicion del aire en el producto. pComposiciónDelAire!=null, pComposiciónDelAire!=""
 	 */
 	
+=======
+
+>>>>>>> e0ec13078cc0d40bb6980f2fbc9338f93c15647d
 	public Congelado_Aire(String pFechaCaducidad, String pNumeroDeLote, String pFechaEnvasado, String pPaisOrigen,
 			String pTemperatura, String pComposiciónDelAire) {
 		super(pFechaCaducidad, pNumeroDeLote, pFechaEnvasado, pPaisOrigen, pTemperatura);
 		// TODO Auto-generated constructor stub
-		
-		this.composicionDelAire=pComposiciónDelAire;
+
+		this.composicionDelAire = pComposiciónDelAire;
 	}
 	
 	/**

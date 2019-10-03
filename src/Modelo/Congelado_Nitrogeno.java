@@ -1,7 +1,7 @@
 package Modelo;
 
-public class Congelado_Nitrogeno extends Congelados{
-	
+public class Congelado_Nitrogeno extends Congelados {
+
 	private String metodoCongelacion;
 	private String tiempoExposicion;
 	
@@ -22,9 +22,9 @@ public class Congelado_Nitrogeno extends Congelados{
 			String pTemperatura, String pMetodoCongelacion, String pTiempoExposicion) {
 		super(pFechaCaducidad, pNumeroDeLote, pFechaEnvasado, pPaisOrigen, pTemperatura);
 		// TODO Auto-generated constructor stub
-		
-		this.metodoCongelacion=pMetodoCongelacion;
-		this.tiempoExposicion=pTiempoExposicion;
+
+		this.metodoCongelacion = pMetodoCongelacion;
+		this.tiempoExposicion = pTiempoExposicion;
 	}
 
 	/**

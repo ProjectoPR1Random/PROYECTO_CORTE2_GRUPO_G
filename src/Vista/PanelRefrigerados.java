@@ -19,7 +19,7 @@ public class PanelRefrigerados extends JPanel {
 	
 	public PanelRefrigerados() {
 		imarefrigerar = new ImageIcon(getClass().getResource("/Imagenes/refrigerados.png"));
-		refrigerar = new JButton("r");
+		refrigerar = new JButton();
 		refrigerar.setForeground(Color.white);
 		refrigerar.setIcon(imarefrigerar);
 		refrigerar.setActionCommand("refrigerar");
