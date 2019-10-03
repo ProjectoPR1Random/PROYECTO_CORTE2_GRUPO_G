@@ -13,11 +13,20 @@ public class PanelInventario extends JPanel {
 
 	public PanelInventario() {
 		imainventario = new ImageIcon(getClass().getResource("/Imagenes/inventario.png"));
-		inventario = new JButton("i");
+		inventario = new JButton();
 		inventario.setForeground(Color.white);
 		inventario.setIcon(imainventario);
 		inventario.setActionCommand("inventario");
 		add(inventario).setBackground(Color.white);
+
+	}
+
+	public JButton getInventario() {
+		return inventario;
+	}
+
+	public void setInventario(JButton inventario) {
+		this.inventario = inventario;
 	}
 
 }
