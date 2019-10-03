@@ -5,7 +5,6 @@ package Modelo;
      * @author JUAN POVEDA, BRYAN CASTILLO, NICOLAS GONZALEZ
      */
 
-<<<<<<< HEAD
     public class Congelado_Agua extends Congelados{
     	
     private String salinidadDelAgua;
@@ -21,23 +20,16 @@ package Modelo;
 	 * @param pTemperatura Temperatura ideal del producto pTemperatura!=null, pTemperatura!=""
 	 * @param pSalinidadDelAgua La cantidad de salinidad del producto pSalinidadDelAgua!=null, pSalinidadDelAgua!=""
 	 */
-=======
-public class Congelado_Agua extends Congelados {
 
-	private String salinidadDelAgua;
 
->>>>>>> e0ec13078cc0d40bb6980f2fbc9338f93c15647d
 	public Congelado_Agua(String pFechaCaducidad, String pNumeroDeLote, String pFechaEnvasado, String pPaisOrigen,
 			String pTemperatura, String pSalinidadDelAgua) {
 		super(pFechaCaducidad, pNumeroDeLote, pFechaEnvasado, pPaisOrigen, pTemperatura);
 		// TODO Auto-generated constructor stub
-<<<<<<< HEAD
 		
 	this.salinidadDelAgua=pSalinidadDelAgua;
-=======
 
 		this.salinidadDelAgua = pSalinidadDelAgua;
->>>>>>> e0ec13078cc0d40bb6980f2fbc9338f93c15647d
 	}
     
 

@@ -11,11 +11,9 @@ import javax.swing.JFrame;
 public class VentanaPrincipal extends JFrame implements ActionListener {
 	PanelTitulo pt;
 	PanelProductos pp;
-<<<<<<< HEAD
 	private JButton manual;
 	
 	
-=======
 	VentanaInventario vi;
 	InformacionTodos it;
 	PanelInventario pi;
@@ -26,7 +24,6 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
 	VentanaTipoCongelado vtc;
 	VentanaCongeladosAgua vca;
 
->>>>>>> e0ec13078cc0d40bb6980f2fbc9338f93c15647d
 	public VentanaPrincipal() {
 		setTitle("AGROUEB");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -53,7 +50,6 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
 		add(pt).setBounds(10, 0, 650, 730);
 		pp.setBackground(Color.white);
 		add(pp).setBounds(675, 0, 510, 676);
-<<<<<<< HEAD
         setVisible(true);
        
         
@@ -69,7 +65,6 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
 	
 	
 	
-=======
 
 		pp.pi.getInventario().addActionListener(this);
 		pp.pf.getFrescos().addActionListener(this);
@@ -90,7 +85,7 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
 
 		setVisible(true);
 
-	}
+	
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
@@ -125,5 +120,5 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
 			vca.setVisible(true);			
 		}
 	}
->>>>>>> e0ec13078cc0d40bb6980f2fbc9338f93c15647d
+}
 }
