@@ -23,6 +23,13 @@ public class Modelo {
 
 	}
 
+	/**
+	 * metodo para agregar un nuevo producto de refirgerados
+	 * <b>pre</b> que no exista un atributo con el mismo numero de lote
+	 * <b>post </b> que se agregue el producto 
+	 * @return temperatura
+	 */
+	
 	public String agregarRefrigerados(String pFechaCaducidad, String pNumeroDeLote, String pFechaEnvasado,
 			String pPaisOrigen, String pCodigoOrganismo, String pTemperatura) {
 
@@ -55,6 +62,13 @@ public class Modelo {
 		return ag;
 	}
 
+	/**
+	 * metodo para agregar un nuevo producto de frescos
+	 * <b>pre</b> que no exista un atributo con el mismo numero de lote
+	 * <b>post </b> que se agregue el producto 
+	 * @return 
+	 */
+	
 	public String agregarFresco(String pFechaCaducidad, String pNumeroDeLote, String pFechaEnvasado,
 			String pPaisOrigen) {
 
@@ -85,7 +99,14 @@ public class Modelo {
 		}
 		return ag;
 	}
-
+    
+	/**
+	 * metodo para agregar un nuevo producto de congelados por agua
+	 * <b>pre</b> que exista un objeto
+	 * <b>post </b> que se agregue el producto 
+	 * @return temperatura
+	 */
+	
 	public String agregarCongelado_Agua(String pFechaCaducidad, String pNumeroDeLote, String pFechaEnvasado,
 			String pPaisOrigen, String pTemperatura, String pSalinidadDelAgua) {
 
@@ -118,6 +139,13 @@ public class Modelo {
 		return ag;
 	}
 
+	/**
+	 * metodo para agregar un nuevo producto de congelados por nitrogeno
+	 * <b>pre</b> que exista el objeto
+	 * <b>post </b> que se agregue el producto 
+	 * @return temperatura
+	 */
+	
 	public String agregarCongelado_Nitrogeno(String pFechaCaducidad, String pNumeroDeLote, String pFechaEnvasado,
 			String pPaisOrigen, String pTemperatura, String pMetodoCongelacion, String pTiempoExposicion) {
 
@@ -150,6 +178,13 @@ public class Modelo {
 		return ag;
 	}
 
+	/**
+	 * metodo para agregar un nuevo producto de congelados por aire
+	 * <b>pre</b> que exista el objeto
+	 * <b>post </b> que se elimine el objeto 
+	 * @return temperatura
+	 */
+	
 	public String agregarCongelado_Aire(String pFechaCaducidad, String pNumeroDeLote, String pFechaEnvasado,
 			String pPaisOrigen, String pTemperatura, String pComposiciónDelAire) {
 
@@ -183,6 +218,13 @@ public class Modelo {
 		return ag;
 	}
 
+	/**
+	 * metodo para aliminar o vender un producto 
+	 * <b>pre</b> que exista el objeto
+	 * <b>post </b> que se elimine el objeto 
+	 * @return temperatura
+	 */
+	
 	public String venderProducto(String pNumeroDeLote) {
 		String respuesta = "";
 		if (existeRefrigerado(pNumeroDeLote) == true || existeFrescos(pNumeroDeLote) == true
@@ -260,6 +302,14 @@ public class Modelo {
 		return respuesta;
 	}
 
+	/**
+	 * metodo para aliminar o vender un producto 
+	 * <b>pre</b> que exista el objeto
+	 * <b>post </b> que se elimine el objeto 
+	 * @return temperatura
+	 */
+	
+	
 	public String eliminarProducto(String pNumeroDeLote) {
 
 		String res = "";
@@ -319,6 +369,13 @@ public class Modelo {
 		return res;
 	}
 
+	/**
+	 * metodo para buscar un objeto dentro de la lista de refrigerados
+	 * <b>pre</b> que el objeto exista
+	 * <b>post </b> que se muestre la existencia del producto
+	 * @return producto
+	 */
+	
 	public Refrigerados buscarRefigerados(String codigo) {
 		Refrigerados encontrado = null;
 		for (int i = 0; i < refrigerados.size(); i++) {
@@ -328,6 +385,13 @@ public class Modelo {
 		}
 		return encontrado;
 	}
+	
+	/**
+	 * metodo para verificar la existencia del producto de refrigerados
+	 * <b>pre</b> que el producto exista
+	 * <b>post </b> verificacion de la existencia del producto
+	 * @return boolean
+	 */
 
 	public boolean existeRefrigerado(String codigo) {
 		if (buscarRefigerados(codigo) != null) {
@@ -336,6 +400,13 @@ public class Modelo {
 		return false;
 	}
 
+	/**
+	 * metodo para buscar un objeto dentro de la lista de frescos
+	 * <b>pre</b> que el objeto exista
+	 * <b>post </b> que se muestre la existencia del producto
+	 * @return producto
+	 */
+	
 	public Frescos buscarFrescos(String codigo) {
 		Frescos encontrado = null;
 		for (int i = 0; i < frescos.size(); i++) {
@@ -345,6 +416,13 @@ public class Modelo {
 		}
 		return encontrado;
 	}
+	
+	/**
+	 * metodo para verificar la existencia del producto de frescos
+	 * <b>pre</b> que el producto exista
+	 * <b>post </b> verificacion de la existencia del producto
+	 * @return boolean
+	 */
 
 	public boolean existeFrescos(String codigo) {
 		if (buscarFrescos(codigo) != null) {
@@ -352,6 +430,13 @@ public class Modelo {
 		}
 		return false;
 	}
+	
+	/**
+	 * metodo para buscar un objeto dentro de la lista de congelados por agua
+	 * <b>pre</b> que el objeto exista
+	 * <b>post </b> que se muestre la existencia del producto
+	 * @return producto
+	 */
 
 	public Congelado_Agua buscarCongelado_Agua(String codigo) {
 		Congelado_Agua encontrado = null;
@@ -363,6 +448,13 @@ public class Modelo {
 		return encontrado;
 	}
 
+	/**
+	 * metodo para verificar la existencia del producto de congelados por agua
+	 * <b>pre</b> que el producto exista
+	 * <b>post </b> verificacion de la existencia del producto
+	 * @return boolean
+	 */
+	
 	public boolean existeCongelado_Agua(String codigo) {
 		if (buscarCongelado_Agua(codigo) != null) {
 			return true;
@@ -370,6 +462,13 @@ public class Modelo {
 		return false;
 	}
 
+	/**
+	 * metodo para buscar un objeto dentro de la lista de congelados por aire
+	 * <b>pre</b> que el objeto exista
+	 * <b>post </b> que se muestre la existencia del producto
+	 * @return producto
+	 */
+	
 	public Congelado_Aire buscarCongelado_Aire(String codigo) {
 		Congelado_Aire encontrado = null;
 		for (int i = 0; i < congelado_Aires.size(); i++) {
@@ -379,6 +478,13 @@ public class Modelo {
 		}
 		return encontrado;
 	}
+	
+	/**
+	 * metodo para verificar la existencia del producto de congelados por aire
+	 * <b>pre</b> que el producto exista
+	 * <b>post </b> verificacion de la existencia del producto
+	 * @return boolean
+	 */
 
 	public boolean existeCongelado_Aire(String codigo) {
 		if (buscarCongelado_Aire(codigo) != null) {
@@ -386,6 +492,13 @@ public class Modelo {
 		}
 		return false;
 	}
+	
+	/**
+	 * metodo para buscar un objeto dentro de la lista de congelados por nitrogeno
+	 * <b>pre</b> que el objeto exista
+	 * <b>post </b> que se muestre la existencia del producto
+	 * @return producto
+	 */
 
 	public Congelado_Nitrogeno buscarCongelado_Nitrogeno(String codigo) {
 		Congelado_Nitrogeno encontrado = null;
@@ -397,6 +510,13 @@ public class Modelo {
 		return encontrado;
 	}
 
+	/**
+	 * metodo para verificar la existencia del producto de congelados por nitrogeno
+	 * <b>pre</b> que el producto exista
+	 * <b>post </b> verificacion de la existencia del producto
+	 * @return boolean
+	 */
+	
 	public boolean existeCongelado_Nitrogeno(String codigo) {
 		if (buscarCongelado_Nitrogeno(codigo) != null) {
 			return true;

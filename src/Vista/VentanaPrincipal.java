@@ -2,12 +2,15 @@ package Vista;
 
 import java.awt.Color;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 
 public class VentanaPrincipal extends JFrame {
 	PanelTitulo pt;
 	PanelProductos pp;
-
+	private JButton manual;
+	
+	
 	public VentanaPrincipal() {
 		setTitle("AGRIUEB");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -23,8 +26,19 @@ public class VentanaPrincipal extends JFrame {
 		pp = new PanelProductos();
 		pp.setBackground(Color.white);
 		add(pp).setBounds(675, 0, 510, 676);
-
-		setVisible(true);
+        setVisible(true);
+       
+        
 
 	}
+
+	
+	
+	
+
+
+	
+	
+	
+	
 }

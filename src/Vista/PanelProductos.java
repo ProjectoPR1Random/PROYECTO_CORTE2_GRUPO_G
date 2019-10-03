@@ -13,6 +13,11 @@ public class PanelProductos extends JPanel {
 	PanelCongelados pc;
 	PanelInventario pi;
 
+	/**
+	 * Se importa los paneles que contienen los botones
+	 * Se agregan los paneles importados al panel Productos
+	 */
+	
 	public PanelProductos() {
 
 		setLayout(new GridLayout(4, 1));
