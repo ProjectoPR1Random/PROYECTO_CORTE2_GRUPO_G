@@ -43,7 +43,7 @@ public class VentanaTipoCongelado extends JFrame {
 		caire.setBackground(Color.white);
 		caire.setActionCommand("cai");
 		add(caire).setBounds(10, 315, 270, 245);
-		
+
 		cnitrogenoim = new ImageIcon(getClass().getResource("/Imagenes/cnitrogeno.png"));
 		cnitrogeno = new JButton();
 		cnitrogeno.setForeground(Color.white);
@@ -51,7 +51,7 @@ public class VentanaTipoCongelado extends JFrame {
 		cnitrogeno.setBackground(Color.white);
 		cnitrogeno.setActionCommand("cni");
 		add(cnitrogeno).setBounds(285, 315, 270, 245);
-		
+
 		caguaim = new ImageIcon(getClass().getResource("/Imagenes/cagua.png"));
 		cagua = new JButton();
 		cagua.setForeground(Color.white);

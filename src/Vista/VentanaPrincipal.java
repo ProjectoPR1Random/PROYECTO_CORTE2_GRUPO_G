@@ -19,6 +19,8 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
 	VentanaRefrigerados vr;
 	VentanaTipoCongelado vtc;
 	VentanaCongeladosAgua vca;
+	VentanaCongeladosNitrogeno vcn;
+	VentanaCongeladosAire vcai;
 
 	public VentanaPrincipal() {
 		setTitle("AGROUEB");
@@ -35,6 +37,8 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
 		vr = new VentanaRefrigerados();
 		vtc = new VentanaTipoCongelado();
 		vca = new VentanaCongeladosAgua();
+		vcn = new VentanaCongeladosNitrogeno();
+		vcai = new VentanaCongeladosAire();
 		pt = new PanelTitulo();
 		pp = new PanelProductos();
 		pi = new PanelInventario();
@@ -63,6 +67,9 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
 		vtc.getCaire().addActionListener(this);
 		vtc.getCnitrogeno().addActionListener(this);
 		vtc.getCagua().addActionListener(this);
+		vca.getComprar().addActionListener(this);
+		vca.getVender().addActionListener(this);
+		
 
 		setVisible(true);
 
@@ -98,7 +105,10 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
 
 		}
 		if (e.getActionCommand().equals("cni")) {
-			vca.setVisible(true);			
+			vcn.setVisible(true);
+		}
+		if (e.getActionCommand().equals("cai")) {
+			vcai.setVisible(true);
 		}
 	}
 }

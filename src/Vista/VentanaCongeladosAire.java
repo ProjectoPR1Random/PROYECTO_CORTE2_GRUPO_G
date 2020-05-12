@@ -12,15 +12,15 @@ import javax.swing.JScrollPane;
 import javax.swing.ListSelectionModel;
 import javax.swing.ScrollPaneConstants;
 
-public class VentanaCongeladosAgua extends JFrame {
+public class VentanaCongeladosAire extends JFrame {
 	JButton comprar;
 	JButton vender;
 	JButton modificar;
-	JList<String> listaCAG;
+	JList<String> listaCAI;
 	DefaultListModel<String> modelo;
 
-	public VentanaCongeladosAgua() {
-		setTitle("PRODUCTOS CONGELADOS POR AGUA ");
+	public VentanaCongeladosAire() {
+		setTitle("PRODUCTOS CONGELADOS POR AIRE ");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		getContentPane().setLayout(null);
 		setResizable(false);
@@ -29,36 +29,33 @@ public class VentanaCongeladosAgua extends JFrame {
 		setLocationRelativeTo(null);
 		this.setBackground(Color.white);
 
-		JPanel listaCongeladosAgua = new JPanel();
+		JPanel listaCongeladosAire = new JPanel();
 		setLayout(null);
-		listaCAG = new JList<String>();
+		listaCAI = new JList<String>();
 		modelo = new DefaultListModel<String>();
-		JScrollPane desplazamientolista = new JScrollPane(listaCAG);
-		listaCAG.setModel(modelo);
-		listaCAG.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+		JScrollPane desplazamientolista = new JScrollPane(listaCAI);
+		listaCAI.setModel(modelo);
+		listaCAI.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		desplazamientolista.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 		add(desplazamientolista).setBounds(10, 10, 280, 650);
 
-		JPanel crudCongeladosAgua = new JPanel();
+		JPanel crudCongeladosAire = new JPanel();
 		setLayout(null);
 		comprar = new JButton("COMPRAR PRODUCTO");
 		comprar.setBackground(Color.cyan);
 		comprar.setForeground(Color.blue);
-		comprar.setActionCommand("compro");
 		add(comprar).setFont(new Font("Tahoma", Font.BOLD, 20));
 		add(comprar).setBounds(302, 50, 280, 100);
 
 		vender = new JButton("VENDER PRODUCTO");
 		vender.setBackground(Color.cyan);
 		vender.setForeground(Color.blue);
-		vender.setActionCommand("venpro");
 		add(vender).setFont(new Font("Tahoma", Font.BOLD, 20));
 		add(vender).setBounds(302, 250, 280, 100);
 
 		modificar = new JButton("MODIFICAR PRODUCTO");
 		modificar.setBackground(Color.cyan);
 		modificar.setForeground(Color.blue);
-		modificar.setActionCommand("modpro");
 		add(modificar).setFont(new Font("Tahoma", Font.BOLD, 20));
 		add(modificar).setBounds(302, 450, 280, 100);
 
@@ -89,12 +86,12 @@ public class VentanaCongeladosAgua extends JFrame {
 		this.modificar = modificar;
 	}
 
-	public JList<String> getListaCAG() {
-		return listaCAG;
+	public JList<String> getListaCAI() {
+		return listaCAI;
 	}
 
-	public void setListaCAG(JList<String> listaCAG) {
-		this.listaCAG = listaCAG;
+	public void setListaCAI(JList<String> listaCAI) {
+		this.listaCAI = listaCAI;
 	}
 
 	public DefaultListModel<String> getModelo() {
