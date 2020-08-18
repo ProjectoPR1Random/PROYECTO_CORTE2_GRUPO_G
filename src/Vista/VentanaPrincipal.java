@@ -5,11 +5,15 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.nio.channels.Pipe;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 
 public class VentanaPrincipal extends JFrame implements ActionListener {
 	PanelTitulo pt;
 	PanelProductos pp;
+	private JButton manual;
+	
+	
 	VentanaInventario vi;
 	InformacionTodos it;
 	PanelInventario pi;
@@ -50,6 +54,21 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
 		add(pt).setBounds(10, 0, 650, 730);
 		pp.setBackground(Color.white);
 		add(pp).setBounds(675, 0, 510, 676);
+        setVisible(true);
+       
+        
+
+	}
+
+	
+	
+	
+
+
+	
+	
+	
+	
 
 		pp.pi.getInventario().addActionListener(this);
 		pp.pf.getFrescos().addActionListener(this);
@@ -73,7 +92,7 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
 
 		setVisible(true);
 
-	}
+	
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
@@ -111,4 +130,5 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
 			vcai.setVisible(true);
 		}
 	}
+}
 }

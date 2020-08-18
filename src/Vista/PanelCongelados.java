@@ -12,6 +12,11 @@ public class PanelCongelados extends JPanel {
 	Icon imacongelar;
 
 	public PanelCongelados() {
+		/**
+		 * Se crea el boton de congelar y se le da una serie de caracteristicas 
+		 * Se crea un ImageIcon para asignarle una imagen  al boton
+		 * Con set Foreground se le cambia el color a la letra
+		 */
 		imacongelar = new ImageIcon(getClass().getResource("/Imagenes/congelados.png"));
 		congelar = new JButton();
 		congelar.setForeground(Color.white);

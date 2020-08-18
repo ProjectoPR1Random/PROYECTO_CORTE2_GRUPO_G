@@ -11,6 +11,12 @@ public class PanelRefrigerados extends JPanel {
 	JButton refrigerar;
 	Icon imarefrigerar;
 
+	/**
+	 * Se crea el boton de refrigerar y se le da una serie de caracteristicas 
+	 * Se crea un ImageIcon para asignarle una imagen  al boton
+	 * Con set Foreground se le cambia el color a la letra
+	 */
+	
 	public PanelRefrigerados() {
 		imarefrigerar = new ImageIcon(getClass().getResource("/Imagenes/refrigerados.png"));
 		refrigerar = new JButton();

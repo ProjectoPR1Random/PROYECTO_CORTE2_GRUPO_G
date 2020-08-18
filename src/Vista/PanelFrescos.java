@@ -11,6 +11,13 @@ public class PanelFrescos extends JPanel {
 	JButton frescos;
 	Icon imafrescos;
 
+	/**
+	 * Se crea el boton de frescos y se le da una serie de caracteristicas 
+	 * Se crea un ImageIcon para asignarle una imagen  al boton
+	 * Con set Foreground se le cambia el color a la letra
+	 */
+	
+	
 	public PanelFrescos() {
 		imafrescos = new ImageIcon(getClass().getResource("/Imagenes/frescos.png"));
 		frescos = new JButton();
